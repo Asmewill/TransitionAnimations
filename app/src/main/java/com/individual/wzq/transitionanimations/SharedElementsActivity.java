@@ -1,8 +1,7 @@
 package com.individual.wzq.transitionanimations;
 
-import android.app.ActivityOptions;
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
@@ -28,9 +27,10 @@ public class SharedElementsActivity extends AppCompatActivity {
 
     @OnClick(R.id.button)//分享元素1按钮
     public void onClick() {
-        startActivity(new Intent(this, MainActivity.class),
-                ActivityOptions.makeSceneTransitionAnimation
-                        (this, button, "myButton1")
-                        .toBundle());
+//        startActivity(new Intent(this, MainActivity.class),
+//                ActivityOptions.makeSceneTransitionAnimation
+//                        (this, button, "myButton1")
+//                        .toBundle());
+        ActivityCompat.finishAfterTransition(this);
     }
 }
