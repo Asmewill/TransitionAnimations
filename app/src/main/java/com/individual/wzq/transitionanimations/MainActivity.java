@@ -43,21 +43,23 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.explode://分解
-                startActivity(new Intent(this, ExplodeActivity.class), ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(new Intent(this, ExplodeActivity.class),
+                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 break;
             case R.id.slide://滑动
-                startActivity(new Intent(this, SlideActivity.class), ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-
+                startActivity(new Intent(this, SlideActivity.class),
+                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 break;
             case R.id.fade://渐入渐出
-                startActivity(new Intent(this, FadeActivity.class), ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-
+                startActivity(new Intent(this, FadeActivity.class),
+                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 break;
             case R.id.sharedElements1://共享元素 下一个页面的按钮 相互绑定
                 startActivity(new Intent(this, SharedElementsActivity.class),
                         ActivityOptions.makeSceneTransitionAnimation
                                 (this, view, "myButton1")
                                 .toBundle());
+                break;
             case R.id.sharedElements2://共享元素 多个元素
                 startActivity(new Intent(this, SharedElementsActivity.class),
                         ActivityOptions.makeSceneTransitionAnimation

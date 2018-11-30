@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="共享元素1"
-        android:transitionName="myButton1" />
+        android:transitionName="myButton4" />
 
     <Button
         android:id="@+id/sharedElements2"
